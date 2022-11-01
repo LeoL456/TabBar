@@ -1,0 +1,126 @@
+/* 
+    TaBar by Léo Lesimple
+    © 2022
+    v1.0 (31 oct. 2022)
+*/
+
+/* Active state */
+a.tabbar-link:nth-child(1) {
+    background-color: rgba(162, 162, 162, 0.395) !important;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5 !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.tabbar {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    margin-left: -8px !important;
+    padding: .2em 0em;
+    background-color: #ededed;
+    z-index: 2;
+}
+
+a.tabbar-link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: .9em 1em;
+    color: #000;
+}
+
+
+a.tabbar-link:hover {
+    background-color: rgba(162, 162, 162, 0.395) !important;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.tabbar-link:hover>* {
+    transform: scale(1.25) !important;
+    transition: all .5s;
+}
+
+/* TabBar more */
+
+.more-tabbar {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+a.tabbar-link-more {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: .9em 1em;
+    color: #000;
+    transition: all .5s;
+}
+
+.more-active {
+    bottom: 5em !important;
+    box-shadow: 0px 0px 0.4rem #9191913b !important;
+    transition: all .4s !important;
+}
+
+.tabbar-link p {
+    font-size: 10px !important;
+}
+
+.tabbar-link-more p {
+    font-size: 12px;
+}
+
+.tabbar-link-more:hover {
+    background-color: rgba(137, 137, 137, 0.395) !important;
+    border-radius: 15px !important;
+    transition: all 1s !important;
+}
+
+.tabbar-link-more:hover>* {
+    transform: scale(1.25) !important;
+    transition: all .5s;
+}
+
+@media screen and (max-width:320px) {
+    a.tabbar-link,
+    .tabbar-link-more {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+    }
+}

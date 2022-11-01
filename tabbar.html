@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/tabbar.css">
+</head>
+
+<body>
+    <h3 style="text-align:center">Click on "Web Apps" to see the animation !</h3>
+
+    <nav class="tabbar">
+        <a class="tabbar-link" href="">
+            <i class="bi bi-house"></i>
+            <p>Home</p>
+        </a>
+        <a class="tabbar-link" onclick="forms_btn()">
+            <i class="bi bi-app-indicator"></i>
+            <p>Web Apps</p>
+        </a>
+        <a class="tabbar-link" href="">
+            <i class="bi bi-bell"></i>
+            <p>Notifications</p>
+        </a>
+        <a class="tabbar-link" href="">
+            <i class="bi bi-gear-wide"></i>
+            <p>Settings</p>
+        </a>
+    </nav>
+
+    <div class="more-tabbar" id="tab_more">
+        <a class="tabbar-link-more" href="">
+            <i class="bi bi-file-earmark-richtext"></i>
+            <p>Text</p>
+        </a>
+        <a class="tabbar-link-more" href="">
+            <i class="bi bi-file-earmark-spreadsheet"></i>
+            <p>Spreadsheet</p>
+        </a>
+        <a class="tabbar-link-more" href="">
+            <i class="bi bi-file-earmark-easel"></i>
+            <p>Presentation</p>
+        </a>
+        <a class="tabbar-link-more" href="">
+            <i class="bi bi-envelope-paper"></i>
+            <p>Mail</p>
+        </a>
+    </div>
+    <script>
+        function forms_btn() {
+            var element = document.getElementById("tab_more");
+            element.classList.toggle("more-active");
+        }
+    </script>
+</body>
+
+</html>
